@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="/css/shared.css"> -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3 class="logo">ibrahim</h3>
+            <ul class="menu">
+                <li><a href="../index.html"><i class="fa-regular fa-chart-bar fa-fw"></i> <span>dashboard</span></a>
+                </li>
+                <li><a href="settings.html"><i class="fa-solid fa-gear fa-fw"></i> <span>settings</span></a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> <span>profile</span></a></li>
+                <li><a href="projects.html"><i class="fa-solid fa-diagram-project"></i> <span>projects</span></a>
+                </li>
+                <li><a href="courses.html"><i class="fa-solid fa-graduation-cap"></i> <span>courses</span></a>
+                </li>
+                <li><a href="friends.html"><i class="fa-solid fa-user-group"></i> <span>friends</span></a></li>
+                <li><a href="files.html"><i class="fa-solid fa-file"></i> <span>files</span></a></li>
+                <li><a href="plans.html"><i class="fa-sharp fa-regular fa-credit-card"></i> <span>plans</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <nav class="nav">
+                <div class="left">
+                    <div class="sidebar-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" placeholder="type a keyword">
+                    </form>
+                </div>
+                <ul class="right">
+                    <li id="profile-menu" class="profile-menu">
+                        <div class="image">
+                            <img src="/images/avatar.png">
+                        </div>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-user"></i> profile</a></li>
+                            <li><a href="#"><i class="fa-solid fa-gear"></i> settings</a></li>
+                            <li><a href="#"><i class="fa-solid fa-sliders"></i> activity log</a></li>
+                            <li><a href="#"><i class="fa-sharp fa-solid fa-right-from-bracket"></i> logout</a></li>
+                        </ul>
+                    </li>
+                    <li id="notification" class="notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <ul>
+                            <li><a href="#">
+                                    <div class="image">
+                                        <img src="../images/avi.svg">
+                                    </div>
+                                    <div class="text">
+                                        <span>december 12, 2019</span>
+                                        <h4>a new monthly report is ready to download!</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <div class="image">
+                                        <img src="../images/eps.svg">
+                                    </div>
+                                    <div class="text">
+                                        <span>december 12, 2019</span>
+                                        <h4>a new monthly report is ready to download!</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <div class="image">
+                                        <img src="../images/dll.svg">
+                                    </div>
+                                    <div class="text">
+                                        <span>december 12, 2019</span>
+                                        <h4>a new monthly report is ready to download!</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="page">
+                <h1 class="title">settings</h1>
+                <div class="cards">
+                    <div class="card site-control">
+                        <div class="title">
+                            <h3>site controle</h3>
+                            <span>Control The Website If There Is Maintenance</span>
+                        </div>
+                        <div class="wrapper">
+                            <div class="text">
+                                <h4>website control</h4>
+                                <p>Open/Close Website And Type The Reason</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <div class="switch"></div>
+                            </label>
+                        </div>
+                        <textarea placeholder="close message content"></textarea>
+                    </div>
+                    <div class="card general-info">
+                        <div class="title">
+                            <h3>general-info</h3>
+                            <span>General Information About Your Account</span>
+                        </div>
+                        <form>
+                            <label>
+                                <input type="text">
+                                <span>first name</span>
+                            </label>
+                            <label>
+                                <input type="text">
+                                <span>first name</span>
+                            </label>
+                            <div class="wrapper">
+                                <label>
+                                    <input type="text" disabled>
+                                    <span>email</span>
+                                </label>
+                                <button type="submit">change</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card security-info">
+                        <div class="title">
+                            <h3>security-info</h3>
+                            <span>General Information About Your Account</span>
+                        </div>
+                        <div class="info">
+                            <div class="text">
+                                <h4>Password</h4>
+                                <p>Last Change On 25/10/2021</p>
+                            </div>
+                            <a href="#" class="btn btn-blue">change</a>
+                        </div>
+                        <div class="info">
+                            <div class="text">
+                                <h4>Two-Factor Authentication</h4>
+                                <p>Two-Factor Authentication</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <div class="switch"></div>
+                            </label>
+                        </div>
+                        <div class="info">
+                            <div class="text">
+                                <h4>Devices</h4>
+                                <p>Check The Login Devices List</p>
+                            </div>
+                            <a href="#" class="btn bg-eee">Devices</a>
+                        </div>
+                    </div>
+                    <div class="card social-info">
+                        <div class="title">
+                            <h3>Social Info</h3>
+                            <span>Social Media Information</span>
+                        </div>
+                        <form>
+                            <div class="wrapper">
+                                <div class="icon">
+                                    <i class="fa-brands fa-twitter center-flex c-grey"></i>
+                                </div>
+                                <input type="text" placeholder="twitter user name">
+                            </div>
+                            <div class="wrapper">
+                                <div class="icon">
+                                    <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+                                </div>
+                                <input type="text" placeholder="facebook user name">
+                            </div>
+                            <div class="wrapper">
+                                <div class="icon">
+                                    <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                                </div>
+                                <input type="text" placeholder="linkedin user name">
+                            </div>
+                            <div class="wrapper">
+                                <div class="icon">
+                                    <i class="fa-brands fa-youtube center-flex c-grey"></i>
+                                </div>
+                                <input type="text" placeholder="youtube user name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card widgets-control">
+                        <div class="title">
+                            <h3>widgets control</h3>
+                            <span>Show/Hide Widgets</span>
+                        </div>
+                        <form>
+                            <div class="widget">
+                                <input id="box1" type="checkbox" checked>
+                                <label for="box1">Quick Draft</label>
+                            </div>
+                            <div class="widget">
+                                <input id="box2" type="checkbox" checked>
+                                <label for="box2">Yearly Targets</label>
+                            </div>
+                            <div class="widget">
+                                <input id="box3" type="checkbox" checked>
+                                <label for="box3">Tickets Statistics</label>
+                            </div>
+                            <div class="widget">
+                                <input id="box4" type="checkbox" checked>
+                                <label for="box4">Latest News</label>
+                            </div>
+                            <div class="widget">
+                                <input id="box5" type="checkbox">
+                                <label for="box5">Latest Tasks</label>
+                            </div>
+                            <div class="widget">
+                                <input id="box6" type="checkbox">
+                                <label for="box6">Top Search Items</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card backup-manager">
+                        <div class="title">
+                            <h3>Backup Manager</h3>
+                            <span>Control Backup Time And Location</span>
+                        </div>
+                        <form>
+                            <div class="wrapper">
+                                <input id="dialy" name="interval" type="radio">
+                                <label for="dialy">daily</label>
+                            </div>
+                            <div class="wrapper">
+                                <input id="weekly" name="interval" type="radio" checked>
+                                <label for="weekly">weekly</label>
+                            </div>
+                            <div class="wrapper">
+                                <input id="monthly" name="interval" type="radio">
+                                <label for="monthly">daily</label>
+                            </div>
+                            <div class="servers">
+                                <input id="megaman" type="radio" name="server">
+                                <label for="megaman">
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    Megaman
+                                </label>
+                                <input id="ibrahim" type="radio" name="server" checked>
+                                <label for="ibrahim">
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    ibrahim
+                                </label>
+                                <input id="sigma" type="radio" name="server">
+                                <label for="sigma">
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    sigma
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/main.js"></script>
+
+</html>
